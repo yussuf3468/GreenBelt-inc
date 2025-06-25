@@ -138,169 +138,169 @@ function App() {
 
       {/* Hero Section */}
       <section
-  id="home"
-  className="pt-16 bg-gradient-to-br from-green-50 via-white to-green-50 overflow-hidden"
->
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-    <div className="grid lg:grid-cols-2 gap-12 items-center">
-      {/* LEFT TEXT */}
-      <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-left"
+        id="home"
+        className="pt-16 bg-gradient-to-br from-green-50 via-white to-green-50 overflow-hidden"
       >
-        <motion.h1
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.6 }}
-          className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6"
-        >
-          Your Trusted Gateway to{" "}
-          <span className="text-green-700">Global Commodity Trade</span>
-        </motion.h1>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* LEFT TEXT */}
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="text-left"
+            >
+              <motion.h1
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.1, duration: 0.6 }}
+                className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6"
+              >
+                Your Trusted Gateway to{" "}
+                <span className="text-green-700">Global Commodity Trade</span>
+              </motion.h1>
 
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-xl text-gray-600 mb-8 leading-relaxed"
-        >
-          Greenbelt Canada Inc. specializes in facilitating large-scale
-          commodity transactions across the globe. We connect verified buyers
-          with reputable suppliers, streamlining the movement of high-demand
-          commodities.
-        </motion.p>
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="text-xl text-gray-600 mb-8 leading-relaxed"
+              >
+                Greenbelt Canada Inc. specializes in facilitating large-scale
+                commodity transactions across the globe. We connect verified
+                buyers with reputable suppliers, streamlining the movement of
+                high-demand commodities.
+              </motion.p>
 
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.35 }}
+                className="flex flex-col sm:flex-row gap-4"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => scrollToSection("contact")}
+                  className="bg-green-700 text-white px-8 py-4 rounded-lg hover:bg-green-800 transition-all duration-200 font-semibold flex items-center justify-center group"
+                >
+                  Start Trading Today
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => scrollToSection("about")}
+                  className="border-2 border-green-700 text-green-700 px-8 py-4 rounded-lg hover:bg-green-700 hover:text-white transition-all duration-200 font-semibold"
+                >
+                  Learn More
+                </motion.button>
+              </motion.div>
+            </motion.div>
+
+            {/* RIGHT IMAGE */}
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="relative"
+            >
+              <img
+                src="/images/oil.jpg"
+                alt="Global trade and shipping"
+                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+              />
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.4 }}
+                className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg"
+              >
+                <div className="flex items-center">
+                  <TrendingUp className="h-8 w-8 text-green-700 mr-3" />
+                  <div>
+                    <p className="text-sm text-gray-600">Global Network</p>
+                    <p className="text-lg font-bold text-gray-900">
+                      50+ Countries
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* WHY CHOOSE US */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.35 }}
-          className="flex flex-col sm:flex-row gap-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white py-20"
         >
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={() => scrollToSection("contact")}
-            className="bg-green-700 text-white px-8 py-4 rounded-lg hover:bg-green-800 transition-all duration-200 font-semibold flex items-center justify-center group"
-          >
-            Start Trading Today
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+          <div className="max-w-6xl mx-auto px-4 text-center">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="text-3xl font-bold text-gray-900 mb-6"
+            >
+              Why Partner with Greenbelt Canada?
+            </motion.h2>
 
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={() => scrollToSection("about")}
-            className="border-2 border-green-700 text-green-700 px-8 py-4 rounded-lg hover:bg-green-700 hover:text-white transition-all duration-200 font-semibold"
-          >
-            Learn More
-          </motion.button>
-        </motion.div>
-      </motion.div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="text-gray-600 mb-12 text-lg"
+            >
+              We are more than brokers — we are a bridge of trust in high-value
+              global trade. Here’s why our partners choose us:
+            </motion.p>
 
-      {/* RIGHT IMAGE */}
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
-        className="relative"
-      >
-        <img
-          src="/images/oil.jpg"
-          alt="Global trade and shipping"
-          className="w-full h-96 object-cover rounded-2xl shadow-2xl"
-        />
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.4 }}
-          className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg"
-        >
-          <div className="flex items-center">
-            <TrendingUp className="h-8 w-8 text-green-700 mr-3" />
-            <div>
-              <p className="text-sm text-gray-600">Global Network</p>
-              <p className="text-lg font-bold text-gray-900">50+ Countries</p>
+            <div className="grid md:grid-cols-3 gap-8 text-left">
+              {[
+                ...[
+                  {
+                    icon: <Shield className="h-8 w-8 text-green-700 mb-4" />,
+                    title: "Trusted Transactions",
+                    desc: "We verify every buyer and supplier, ensuring only credible parties are brought together.",
+                  },
+                  {
+                    icon: <Clock className="h-8 w-8 text-green-700 mb-4" />,
+                    title: "Speed & Efficiency",
+                    desc: "Our team works around the clock to meet tight timelines and ensure seamless deals.",
+                  },
+                  {
+                    icon: <Users className="h-8 w-8 text-green-700 mb-4" />,
+                    title: "Global Relationships",
+                    desc: "We've cultivated strong ties across five continents, allowing us to operate globally with confidence.",
+                  },
+                ].map((card, i) => (
+                  <motion.div
+                    key={i}
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.98 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + i * 0.1 }}
+                    className="bg-green-50 p-6 rounded-lg shadow hover:shadow-md transition"
+                  >
+                    {card.icon}
+                    <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                      {card.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">{card.desc}</p>
+                  </motion.div>
+                )),
+              ]}
             </div>
           </div>
         </motion.div>
-      </motion.div>
-    </div>
-  </div>
-
-  {/* WHY CHOOSE US */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.6 }}
-    className="bg-white py-20"
-  >
-    <div className="max-w-6xl mx-auto px-4 text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl font-bold text-gray-900 mb-6"
-      >
-        Why Partner with Greenbelt Canada?
-      </motion.h2>
-
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3, duration: 0.6 }}
-        className="text-gray-600 mb-12 text-lg"
-      >
-        We are more than brokers — we are a bridge of trust in high-value
-        global trade. Here’s why our partners choose us:
-      </motion.p>
-
-      <div className="grid md:grid-cols-3 gap-8 text-left">
-        {[...[
-          {
-            icon: <Shield className="h-8 w-8 text-green-700 mb-4" />,
-            title: "Trusted Transactions",
-            desc:
-              "We verify every buyer and supplier, ensuring only credible parties are brought together.",
-          },
-          {
-            icon: <Clock className="h-8 w-8 text-green-700 mb-4" />,
-            title: "Speed & Efficiency",
-            desc:
-              "Our team works around the clock to meet tight timelines and ensure seamless deals.",
-          },
-          {
-            icon: <Users className="h-8 w-8 text-green-700 mb-4" />,
-            title: "Global Relationships",
-            desc:
-              "We've cultivated strong ties across five continents, allowing us to operate globally with confidence.",
-          },
-        ].map((card, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.98 }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 + i * 0.1 }}
-            className="bg-green-50 p-6 rounded-lg shadow hover:shadow-md transition"
-          >
-            {card.icon}
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">
-              {card.title}
-            </h3>
-            <p className="text-gray-600 text-sm">{card.desc}</p>
-          </motion.div>
-        ))]}
-      </div>
-    </div>
-  </motion.div>
-</section>
-
+      </section>
 
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
@@ -412,174 +412,182 @@ function App() {
 
       {/* Commodities Section */}
       <section id="commodities" className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-        Our Core Commodities
-      </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        We deal in a range of high-demand global commodities, ensuring quality, reliability, and competitive pricing.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-2 gap-10">
-      {/* Card 1 - Petroleum */}
-      <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
-        <img
-          src="/images/petroleum.jpg"
-          alt="Petroleum Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end">
-          <div className="mb-4 flex items-center">
-            <Droplet className="h-6 w-6 text-blue-400 mr-2" />
-            <h3 className="text-2xl font-bold text-white">Petroleum Products</h3>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Our Core Commodities
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We deal in a range of high-demand global commodities, ensuring
+              quality, reliability, and competitive pricing.
+            </p>
           </div>
-          <ul className="space-y-2 text-gray-100 text-sm">
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Crude Oil</span>
-              <span>Bonny Light, Brent</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Diesel (AGO)</span>
-              <span>High Quality</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Jet Fuel (JP54)</span>
-              <span>Aviation Grade</span>
-            </li>
-            <li className="flex justify-between pt-1">
-              <span>Mazut</span>
-              <span>Various Grades</span>
-            </li>
-          </ul>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Card 1 - Petroleum */}
+            <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
+              <img
+                src="/images/petroleum.jpg"
+                alt="Petroleum Background"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
+                <div className="mb-4 flex items-center">
+                  <Droplet className="h-6 w-6 text-blue-400 mr-2" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Petroleum Products
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-gray-100 text-sm">
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Crude Oil</span>
+                    <span>Bonny Light, Brent</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Diesel (AGO)</span>
+                    <span>High Quality</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Jet Fuel (JP54)</span>
+                    <span>Aviation Grade</span>
+                  </li>
+                  <li className="flex justify-between pt-1">
+                    <span>Mazut</span>
+                    <span>Various Grades</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 2 - Agriculture */}
+            <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
+              <img
+                src="/images/agriculture.jpg"
+                alt="Agriculture Background"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
+                <div className="mb-4 flex items-center">
+                  <Wheat className="h-6 w-6 text-yellow-300 mr-2" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Agricultural Commodities
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-gray-100 text-sm">
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>ICUMSA-45 Sugar</span>
+                    <span>Premium</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Raw Brown Sugar</span>
+                    <span>Bulk</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Soybean</span>
+                    <span>Brazil Origin</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Corn</span>
+                    <span>Export Grade</span>
+                  </li>
+                  <li className="flex justify-between pt-1">
+                    <span>Wheat</span>
+                    <span>Various Origins</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 3 - Metals */}
+            <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
+              <img
+                src="/images/metals.jpg"
+                alt="Metals Background"
+                className="absolute inset-0 w-full h-full object-cover group-hover :scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
+                <div className="mb-4 flex items-center">
+                  <Shield className="h-6 w-6 text-gray-300 mr-2" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Metals & Minerals
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-gray-100 text-sm">
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Gold</span>
+                    <span>Bars & Nuggets</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Silver</span>
+                    <span>Coins & Bullion</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Iron Ore</span>
+                    <span>Brazilian Origin</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Copper</span>
+                    <span>Concentrate & Cathodes</span>
+                  </li>
+                  <li className="flex justify-between pt-1">
+                    <span>Aluminum</span>
+                    <span>Ingots & Scrap</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 4 - Petrochemicals */}
+            <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
+              <img
+                src="/images/petrochemicals.jpg"
+                alt="Petrochemicals Background"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
+                <div className="mb-4 flex items-center">
+                  <Shield className="h-6 w-6 text-blue-400 mr-2" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Petrochemicals
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-gray-100 text-sm">
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Polyethylene</span>
+                    <span>HDPE, LDPE</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Polypropylene</span>
+                    <span>Granules & Pellets</span>
+                  </li>
+                  <li className="flex justify-between border-b border-white/20 pb-1">
+                    <span>Polyvinyl Chloride (PVC)</span>
+                    <span>Resin & Compounds</span>
+                  </li>
+                  <li className="flex justify-between pt-1">
+                    <span>Styrene Butadiene Rubber (SBR)</span>
+                    <span>Various Grades</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-lg text-gray-600 mb-6">
+              All products are sourced directly from trusted producers and mills
+              — especially from Brazil and Latin America.
+            </p>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-800 transition-colors duration-200 font-semibold inline-flex items-center"
+            >
+              Request Quote
+              <ChevronRight className="ml-2 h-5 w-5" />
+            </button>
+          </div>
         </div>
-      </div>
-
-      {/* Card 2 - Agriculture */}
-      <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
-        <img
-          src="/images/agriculture.jpg"
-          alt="Agriculture Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end">
-          <div className="mb-4 flex items-center">
-            <Wheat className="h-6 w-6 text-yellow-300 mr-2" />
-            <h3 className="text-2xl font-bold text-white">Agricultural Commodities</h3>
-          </div>
-          <ul className="space-y-2 text-gray-100 text-sm">
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>ICUMSA-45 Sugar</span>
-              <span>Premium</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Raw Brown Sugar</span>
-              <span>Bulk</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Soybean</span>
-              <span>Brazil Origin</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Corn</span>
-              <span>Export Grade</span>
-            </li>
-            <li className="flex justify-between pt-1">
-              <span>Wheat</span>
-              <span>Various Origins</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Card 3 - Metals */}
-      <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
-        <img
-          src="/images/metals.jpg"
-          alt="Metals Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover :scale-105 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end">
-          <div className="mb-4 flex items-center">
-            <Shield className="h-6 w-6 text-gray-300 mr-2" />
-            <h3 className="text-2xl font-bold text-white">Metals & Minerals</h3>
-          </div>
-          <ul className="space-y-2 text-gray-100 text-sm">
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Gold</span>
-              <span>Bars & Nuggets</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Silver</span>
-              <span>Coins & Bullion</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Iron Ore</span>
-              <span>Brazilian Origin</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Copper</span>
-              <span>Concentrate & Cathodes</span>
-            </li>
-            <li className="flex justify-between pt-1">
-              <span>Aluminum</span>
-              <span>Ingots & Scrap</span>
-            </li>
-          </ul>
-    </div>
-
-      </div>
-
-      {/* Card 4 - Petrochemicals */}
-      <div className="relative rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 h-[400px] bg-black">
-        <img
-          src="/images/petrochemicals.jpg"
-          alt="Petrochemicals Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end">
-          <div className="mb-4 flex items-center">
-            <Shield className="h-6 w-6 text-blue-400 mr-2" />
-            <h3 className="text-2xl font-bold text-white">Petrochemicals</h3>
-          </div>
-          <ul className="space-y-2 text-gray-100 text-sm">
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Polyethylene</span>
-              <span>HDPE, LDPE</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Polypropylene</span>
-              <span>Granules & Pellets</span>
-            </li>
-            <li className="flex justify-between border-b border-white/20 pb-1">
-              <span>Polyvinyl Chloride (PVC)</span>
-              <span>Resin & Compounds</span>
-            </li>
-            <li className="flex justify-between pt-1">
-              <span>Styrene Butadiene Rubber (SBR)</span>
-              <span>Various Grades</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div className="text-center mt-16">
-      <p className="text-lg text-gray-600 mb-6">
-        All products are sourced directly from trusted producers and mills — especially from Brazil and Latin America.
-      </p>
-      <button
-        onClick={() => scrollToSection("contact")}
-        className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-800 transition-colors duration-200 font-semibold inline-flex items-center"
-      >
-        Request Quote
-        <ChevronRight className="ml-2 h-5 w-5" />
-      </button>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Process Section */}
       <section id="process" className="py-20 bg-white">
