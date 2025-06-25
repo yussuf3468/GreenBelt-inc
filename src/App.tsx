@@ -504,7 +504,7 @@ function App() {
               <img
                 src="/images/metals.jpg"
                 alt="Metals Background"
-                className="absolute inset-0 w-full h-full object-cover group-hover :scale-105 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/40 p-6 flex flex-col justify-end">
                 <div className="mb-4 flex items-center">
