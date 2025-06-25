@@ -17,6 +17,7 @@ import {
   TrendingUp,
   Clock,
   Lock,
+  Quote,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -667,6 +668,74 @@ function App() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-white py-20" id="testimonials">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              What Our Partners Say
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Don’t just take our word for it — here’s what clients and partners
+              have shared about working with Greenbelt Canada.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Testimonial Card 1 */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-gray-50 rounded-xl p-6 shadow hover:shadow-md transition"
+            >
+              <Quote className="h-6 w-6 text-green-700 mb-4" />
+              <p className="text-gray-700 mb-4 text-sm">
+                “Greenbelt helped us close a bulk sugar deal with full
+                transparency. We were impressed by their speed, global reach,
+                and the way they handled the transaction.”
+              </p>
+              <p className="text-sm font-semibold text-gray-900">
+                Mohamed K., Dubai
+              </p>
+              <p className="text-xs text-gray-500">Bulk Sugar Buyer</p>
+            </motion.div>
+
+            {/* Testimonial Card 2 */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-gray-50 rounded-xl p-6 shadow hover:shadow-md transition"
+            >
+              <Quote className="h-6 w-6 text-green-700 mb-4" />
+              <p className="text-gray-700 mb-4 text-sm">
+                “We’ve worked with other middlemen before, but Greenbelt felt
+                like a real partner — very honest and timely. We now use them
+                for all our petroleum imports.”
+              </p>
+              <p className="text-sm font-semibold text-gray-900">
+                Sandra L., Nigeria
+              </p>
+              <p className="text-xs text-gray-500">Oil Trading Company</p>
+            </motion.div>
+
+            {/* Testimonial Card 3 */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-gray-50 rounded-xl p-6 shadow hover:shadow-md transition"
+            >
+              <Quote className="h-6 w-6 text-green-700 mb-4" />
+              <p className="text-gray-700 mb-4 text-sm">
+                “Their due diligence team is solid. They made sure every party
+                was verified before we committed. We’ll be working with them
+                again.”
+              </p>
+              <p className="text-sm font-semibold text-gray-900">
+                Carlos M., Brazil
+              </p>
+              <p className="text-xs text-gray-500">Commodities Exporter</p>
+            </motion.div>
           </div>
         </div>
       </section>
