@@ -1,6 +1,6 @@
 # 🌍 Greenbelt Canada Inc. – Business Profile Website
 
-Welcome to the official repository for **Greenbelt Canada Inc.**, a professional company profile website built using **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. This website showcases the core commodities, process, contact info, and values of a global trading company specializing in oil, sugar, and agricultural exports.
+Welcome to the official repository for **Greenbelt Canada Inc.**, a professional company profile website built using **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. The site presents Greenbelt Canada as a global middleman in commodity trade — specializing in petroleum and agricultural products.
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to the official repository for **Greenbelt Canada Inc.**, a professional
 
 🔗 [greenbeltcanada.com](https://greenbeltcanada.com)
 
-> *Note: This is a production-ready website intended for client presentation and business credibility.*
+> ⚠️ *This site is intended for business presentation and professional credibility.*
 
 ---
 
@@ -22,52 +22,51 @@ Welcome to the official repository for **Greenbelt Canada Inc.**, a professional
 - [Deployment](#deployment)
 - [SEO & Optimization](#seo--optimization)
 - [License](#license)
+- [Author](#author)
 
 ---
 
 ## ✨ Features
 
-✅ Fully responsive design  
-✅ Animated UI using Framer Motion  
-✅ Commodities section with image cards  
-✅ About, Contact & Testimonials sections  
-✅ Navigation with smooth scrolling  
-✅ SEO meta tags and Open Graph support  
-✅ Clean code with Tailwind CSS utility classes  
-✅ TypeScript for safety and scalability  
+- ✅ Fully responsive modern design
+- ✅ Animated UI using Framer Motion
+- ✅ Commodities showcase with images
+- ✅ Smooth scroll navigation
+- ✅ SEO-friendly with meta tags and Open Graph
+- ✅ Tailwind utility-based styling
+- ✅ Built in TypeScript + React
+- ✅ Testimonials, contact form, and profile presentation
 
 ---
 
 ## 🧰 Tech Stack
 
-| Tech             | Description                          |
+| Tech             | Purpose                              |
 |------------------|--------------------------------------|
-| React + Vite     | Lightning-fast frontend framework    |
-| TypeScript       | Typed JavaScript for reliability     |
-| Tailwind CSS     | Utility-first styling                |
-| Framer Motion    | Smooth animations and transitions    |
-| Lucide Icons     | Clean and modern icons               |
-| React Router DOM | Routing & section navigation         |
+| React + Vite     | Frontend app & dev environment       |
+| TypeScript       | Strong typing for reliability        |
+| Tailwind CSS     | Utility-first modern styling         |
+| Framer Motion    | Page transitions & animations        |
+| Lucide Icons     | Modern icon set                      |
+| React Router DOM | Smooth internal section routing      |
 
 ---
 
 ## 🗂️ Project Structure
 
 greenbelt-website/
-│
-├── public/ # Static assets (favicon, images, SEO files)
+├── public/ # Static files (favicon, images, SEO)
 ├── src/
-│ ├── components/ # Reusable UI components (NavBar, Footer, etc.)
-│ ├── pages/ # Page-level sections (Home, About, Contact, etc.)
-│ ├── assets/ # Images and icons
-│ ├── App.tsx # Root app file
-│ └── main.tsx # Vite entry point
-│
-├── index.html # HTML template with meta/OG tags
-├── tailwind.config.ts # Tailwind configuration
-├── tsconfig.json # TypeScript config
-├── package.json # Project dependencies
-└── README.md # This file
+│ ├── components/ # Reusable UI elements (Navbar, Footer, etc.)
+│ ├── pages/ # Homepage, About, Commodities, Contact
+│ ├── assets/ # Images and logos
+│ ├── App.tsx # Root component
+│ └── main.tsx # Vite + React entry point
+├── index.html # Base HTML with SEO meta
+├── tailwind.config.ts # TailwindCSS config
+├── tsconfig.json # TypeScript settings
+├── package.json # Dependencies and scripts
+└── README.md # This documentation
 
 yaml
 Copy
@@ -84,26 +83,26 @@ git clone https://github.com/your-username/greenbelt-website.git
 cd greenbelt-website
 npm install
 🧪 Available Scripts
-Run the development server:
+Start local development server:
 
 bash
 Copy
 Edit
 npm run dev
-Build the site for production:
+Build for production:
 
 bash
 Copy
 Edit
 npm run build
-Preview production build locally:
+Preview production build:
 
 bash
 Copy
 Edit
 npm run preview
 🌐 Deployment
-This project can be deployed easily on platforms like:
+This project can be deployed easily on:
 
 Vercel
 
@@ -111,41 +110,31 @@ Netlify
 
 GitHub Pages (with Vite adapter)
 
-Any traditional VPS or shared hosting
+Traditional VPS or CPanel hosts
 
-Make sure to point your domain (e.g., greenbeltcanada.com) to your deployed frontend.
+📌 Note: Ensure your domain (e.g. greenbeltcanada.com) is properly pointed to the deployed frontend.
 
 🔍 SEO & Optimization
-✅ Meta tags: title, description, keywords
+This site includes:
 
-✅ Open Graph (Facebook, LinkedIn) and Twitter cards
+✅ Meta tags (title, description, keywords)
 
-✅ Canonical URL and favicon
+✅ Open Graph for LinkedIn/Facebook previews
 
-✅ robots.txt and sitemap.xml (optional)
+✅ Twitter card support
 
-✅ Responsive design & lazy-loaded assets
+✅ Canonical URL and favicon setup
+
+✅ Fast-loading and mobile optimized
+
+✅ Lazy-loaded images & clean codebase
 
 📄 License
-This project is intended for professional business use. Unless otherwise specified by the owner (Greenbelt Canada Inc.), reproduction or commercial reuse is not permitted without permission.
+This codebase is intended for private, commercial business use. Reuse, redistribution, or reselling of this code without consent from Greenbelt Canada Inc. is not allowed.
 
-🤝 Author & Contact
-Developed by Yussuf Muse
-🌍 Nairobi, Kenya
+🤝 Author
+Developed by: Yussuf Muse
+📍 Nairobi, Kenya
 📧 Email: info@greenbeltcanada.com
 
-If you find any issues or would like to contribute improvements, feel free to open an issue or a pull request.
-
-This README was tailored for client delivery and presentation. For a minimal developer version, ask for a stripped-down version.
-
-yaml
-Copy
-Edit
-
----
-
-Would you like me to:
-- Create a `robots.txt` or `sitemap.xml` for this repo?
-- Help write a contribution guide or add badges (build, license, deploy, etc.)?
-
-Let me know!
+If you found this repo helpful, consider giving it a ⭐ and sharing!
